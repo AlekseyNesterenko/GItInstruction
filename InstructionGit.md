@@ -183,6 +183,31 @@
 
 Что означает, что коммит успешно выполнен, и добавлена новая версия проекта. 
 
+## 5. Переключение между версиями
+ 
+При использовании команды **git log** можно увидеть список всех коммитов, которые были выполнены. 
 
+    35a38b7 (HEAD -> master) git commit info added
+    d741700 git add info added
+    d237d75 git log info added
+    b54f95b git diff info added
+    fb2a283 git status info added
+    2b0af9d corrected git init info
+    5e18e21 what to begin
+    7c79167 git init additional info added
+    54a28bd git general info added
+    4641a72 Git init info added
+    7aeb9d2 Subheadings added
+    f5c3b4c Main header added
+    55e5962 Inite commit
 
+Для перехода к определнной версии комиита и просмотра состояния на определнный момент используется команда:
+
+    git checkout 7c79167
+ 
+ Через пробел после слова **checkout** необходимо указать идетификатор коммита, который нужно просмотреть. 
+
+ Для перехода обратно к текущей версии проекта необходимо ввести:
+
+    git checkout master
 
