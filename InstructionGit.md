@@ -28,7 +28,7 @@
 
     git version 2.37.2.windows.2
 
-## Инициализация репозитория
+## 1. Инициализация репозитория
 
 ***Репозиторий Git*** — это виртуальное хранилище проекта. В нем можно хранить версии кода для доступа по мере необходимости.
 
@@ -43,6 +43,45 @@
 Что означает, что инициализирован репозиторий в папке, до которой указан путь. 
 
 ## Проверка состояния репозитория
+
+Важно постоянно отслеживать состояние проекта. Для этого используется следующая команда:
+
+    git status
+
+В зависимости от сообщения, которое последует после ввода команды, можно узнать в каком статусе находится проект. 
+
+Например: 
+
+    fatal: not a git repository (or any of the parent directories): .git
+
+Данное сообщение указывает на то, что не проведена инициализация репозитория (команда git init).
+
+    On branch master
+
+    No commits yet
+
+    nothing to commit (create/copy files and use "git add" to track)
+
+Сообщение означает, что в проекте еще не было совершено никаких изменений в проекте. 
+
+    On branch master
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+        modified:   InstructionGit.md
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+Означает, что есть неотслеживаемые изменения. 
+
+    On branch master
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+        modified:   InstructionGit.md
+
+Означает, что изменения, внесенные в проект, добавлены для отслеживания, но не зафисированы. 
+
+ Минимальные знания анлийского языка позволяют без затруднений понять, в каком статусе находиться проект. 
 
 ## Добавление версионности
 
